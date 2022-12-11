@@ -6,16 +6,17 @@
 **Telegram:** @Lev1ossa  
 **Discord:** Alex(@Lev1ossa)  
 ## About myself
-Have started my career as 1C developer 3 years ago. A year ago, for the purpose of self-development, i began to study html/css and simple JS. And started to use it in main work progress. I enjoyed it and decided to learn more of js. Now i'm a student of RSSchool.
+Have started my career as 1C developer 3 years ago. A year ago, for the purpose of self-development, i began to study html/css and simple JS. Later I started to use it in main work process. I enjoyed it and decided to learn more of js. Now i'm a student of RSSchool.
 ## Skills
 1C (middle)  
 HTML5, CSS3 (Basics)  
-JavaScript (Basics)
+JavaScript (Basics)  
 Git, GitHub  
 VS Code
 ## Code example
-[Task on codewards](https://www.codewars.com/kata/54b72c16cd7f5154e9000457)
-```var decodeBits = function(bits){
+[Task on codewars](https://www.codewars.com/kata/54b72c16cd7f5154e9000457)
+```
+var decodeBits = function(bits){
     if(bits[0] == 0 && bits[bits.length - 1] == 0){
       bits = bits.slice(1,-1);
     }
@@ -50,5 +51,5 @@ var decodeMorse = function(morseCode){
 ## Education
 self-studing (freecodecamp.org, learn.javascript.ru)
 ## Languages
-Russian - native
+Russian - native  
 English - pre-intermediate
