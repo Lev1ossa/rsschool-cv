@@ -1,1 +1,1 @@
-# rsschool-cv
+https://Lev1ossa.github.io/rsschool-cv/cv

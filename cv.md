@@ -49,7 +49,7 @@ var decodeMorse = function(morseCode){
 ## Work experience
 1C developer from May 2019 to May 2022
 ## Education
-self-studing (freecodecamp.org, learn.javascript.ru)
+self-studying (freecodecamp.org, learn.javascript.ru)
 ## Languages
 Russian - native  
 English - pre-intermediate
