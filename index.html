@@ -1,13 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV in future</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  <div>Hello world!</div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV in future</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/img/favicon.ico">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-list">          
+          <li class="nav-item"><a href="#contacts" class="link">Contacts</a></li>
+          <li class="nav-item"><a href="#summary" class="link">Summary</a></li>
+          <li class="nav-item"><a href="#skills" class="link">Skills</a></li>          
+          <li class="nav-item"><a href="#code" class="link">Code</a></li>
+          <li class="nav-item"><a href="#projects" class="link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="link">Education</a></li>
+          <li class="nav-item"><a href="#languages" class="link">Languages</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <section id="profile">
+        <img src="./assets/img/cv.png" alt="my photo" class="photo">
+        <div class="title">
+          <h1>Alexander Korobeynikov</h1>
+          <h3>Junior Front-End Developer</h3>
+        </div>        
+      </section>
+
+      <section id="contacts">
+        <h2 class="title">Contact information</h2>
+        <ul class="list">
+          <li class="item">
+            Saint-Petersburg, Russia
+          </li>
+          <li class="item">
+            Email: ikehhui@gmail.com
+          </li>
+          <li class="item">
+            Github: <a href="https://github.com/Lev1ossa" title="github">Lev1ossa</a>
+          </li>
+          <li class="item">
+            Telegram: @Lev1ossa
+          </li>
+          <li class="item">
+            Discord: Alex(@Lev1ossa)
+          </li>
+        </ul>
+      </section>
+      <section id="summary">
+        <h2 class="title">Summary</h2>
+        <p>
+          Have started my career as 1C developer 3 years ago. A year ago, for the purpose of self-development, i began to study html/css and simple JS. 
+          Later I started to use it in main work process. 
+          I enjoyed it and decided to learn more of js. 
+          Now i'm a student of RSSchool.
+        </p>
+      </section>
+      <section id="skills">
+        <h2 class="title">Skills</h2>
+        <ul class="list">
+          <li class="item">
+            1C (middle)
+          </li>
+          <li class="item">
+            HTML5, CSS3 (Basics)
+          </li>
+          <li class="item">
+            JavaScript (Basics)
+          </li>
+          <li class="item">
+            Git, GitHub
+          </li>
+          <li class="item">
+            VS Code
+          </li>
+        </ul>
+      </section>
+      <section id="code">
+        <h2 class="title">Code</h2>
+        <p><a href="https://www.codewars.com/kata/54b72c16cd7f5154e9000457">Task on codewars</a></p>
+        <pre>
+          <code>
+  var decodeBits = function(bits){
+    if(bits[0] == 0 && bits[bits.length - 1] == 0){
+      bits = bits.slice(1,-1);
+    }
+    const arr = bits.match(/0+|1+/g);
+    let unitLong = [...arr].sort((a,b) => a.length - b.length)[0].length;
+    let morseCode = arr.map(item => {
+      if(item[0] == 0){
+        if(item.length == unitLong * 7){
+          return '  ';
+        } else if(item.length == unitLong * 3){
+          return ' ';
+        } else {
+          return '';
+        }
+      } else {
+        if(item.length > unitLong){
+          return '-';           
+        } else {
+          return '.';
+        }
+      }
+    }).join('');
+    return morseCode;
+  }
+
+  var decodeMorse = function(morseCode){
+      return morseCode.split(' ').map((item) => item ? MORSE_CODE[item] : ' ').join('').trim();
+  }
+        </code>
+      </pre>
+      </section>
+      <section id="projects">
+        <h2 class="title">Projects</h2>
+        <ul class="list">
+          <li class="item">
+            <a href="https://github.com/Lev1ossa/rsschool-cv/">My CV</a>
+          </li>          
+        </ul>
+      </section>
+      <section id="education">
+        <h2 class="title">Education</h2>
+        <p>self-studying (freecodecamp.org, learn.javascript.ru)</p>
+      </section>
+      <section id="languages">
+        <h2 class="title">Languages</h2>
+        <ul class="list">
+          <li class="item">
+            Russian - native
+          </li>
+          <li class="item">
+            English - pre-intermediate
+          </li>
+        </ul>
+      </section>
+  </main>
+
+  <footer>
+    <div>
+      © 2022 
+      <a href="https://github.com/Lev1ossa" class="link">Lev1ossa</a>
+    </br>
+      <a href="https://rs.school/js/" class="link"><img src="https://rs.school/images/rs_school_js.svg" class="link-img"></img></a>
+    </div>
+    
+  </footer>
 </body>
 </html>
