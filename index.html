@@ -89,12 +89,12 @@
         <pre>
           <code>
   var decodeBits = function(bits){
-    if(bits[0] == 0 &amp&amp bits[bits.length - 1] == 0){
+    if(bits[0] == 0 &amp;&amp; bits[bits.length - 1] == 0){
       bits = bits.slice(1,-1);
     }
     const arr = bits.match(/0+|1+/g);
-    let unitLong = [...arr].sort((a,b) =&gt a.length - b.length)[0].length;
-    let morseCode = arr.map(item =&gt {
+    let unitLong = [...arr].sort((a,b) =&gt; a.length - b.length)[0].length;
+    let morseCode = arr.map(item =&gt; {
       if(item[0] == 0){
         if(item.length == unitLong * 7){
           return '  ';
@@ -104,7 +104,7 @@
           return '';
         }
       } else {
-        if(item.length &gt unitLong){
+        if(item.length &gt; unitLong){
           return '-';
         } else {
           return '.';
@@ -115,7 +115,7 @@
   }
 
   var decodeMorse = function(morseCode){
-      return morseCode.split(' ').map((item) =&gt item ? MORSE_CODE[item] : ' ').join('').trim();
+      return morseCode.split(' ').map((item) =&gt; item ? MORSE_CODE[item] : ' ').join('').trim();
   }
         </code>
       </pre>
